@@ -1,6 +1,6 @@
 from flask import Flask, request
 
-app = Flask(_name)  # Folosește __name_ corect
+app = Flask(__name__)  # Folosește __name_ corect
 
 # Dicționar pentru stocarea flagurilor
 flags = {}
