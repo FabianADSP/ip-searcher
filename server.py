@@ -1,6 +1,8 @@
 from flask import Flask, request
 
-app = Flask(_name_)
+app = Flask(_name)  # Folosește __name_ corect
+
+# Dicționar pentru stocarea flagurilor
 flags = {}
 
 @app.route('/sendflag/<flag_number>', methods=['POST'])
