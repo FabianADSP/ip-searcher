@@ -15,5 +15,5 @@ def send_flag(flag_number):
 def get_flag(flag_number):
     return flags.get(flag_number, "Niciun flag disponibil.")
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
