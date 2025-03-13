@@ -9,7 +9,7 @@ flags = {}
 def send_flag(flag_number):
     flag = request.get_data(as_text=True)
     flags[flag_number] = flag
-    return f"Flag {flag_number} primit."
+#    return f"Flag {flag_number} primit."
 
 @app.route('/getflag/<flag_number>', methods=['GET'])
 def get_flag(flag_number):
