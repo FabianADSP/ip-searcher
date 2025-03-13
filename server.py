@@ -13,7 +13,7 @@ def send_flag(flag_number):
 
 @app.route('/getflag/<flag_number>', methods=['GET'])
 def get_flag(flag_number):
-    return flags.get(flag_number, "Niciun flag disponibil.")
+  #  return flags.get(flag_number, "Niciun flag disponibil.")
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000)
